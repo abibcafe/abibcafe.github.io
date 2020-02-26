@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aebibtech</title>
+    <link>https://aebibtech-blog.firebaseapp.com/</link>
+    <description>Recent content on Aebibtech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Feb 2020 14:01:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://aebibtech-blog.firebaseapp.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Buy Used Laptops Online</title>
+      <link>https://aebibtech-blog.firebaseapp.com/guides/buying-used-laptops/</link>
+      <pubDate>Mon, 24 Feb 2020 14:01:59 +0800</pubDate>
+      
+      <guid>https://aebibtech-blog.firebaseapp.com/guides/buying-used-laptops/</guid>
+      <description>&lt;p&gt;Buying laptops from online marketplaces and meet-ups? Then this guide is for you!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Choose a PC</title>
+      <link>https://aebibtech-blog.firebaseapp.com/guides/choosing-computers/</link>
+      <pubDate>Wed, 19 Feb 2020 20:01:56 +0800</pubDate>
+      
+      <guid>https://aebibtech-blog.firebaseapp.com/guides/choosing-computers/</guid>
+      <description>&lt;p&gt;Usually people Wondering which PC to choose? Well, it depends on how it will be used.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Install the Chocolatey Package Manager in Windows 10</title>
+      <link>https://aebibtech-blog.firebaseapp.com/guides/win10-install-chocolatey/</link>
+      <pubDate>Wed, 19 Feb 2020 17:17:48 +0800</pubDate>
+      
+      <guid>https://aebibtech-blog.firebaseapp.com/guides/win10-install-chocolatey/</guid>
+      <description>&lt;p&gt;A package manager or package-management system is a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs for a computer&amp;rsquo;s operating system in a consistent manner.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Enable the Administrator account in Windows 10</title>
+      <link>https://aebibtech-blog.firebaseapp.com/guides/win10-admin-account/</link>
+      <pubDate>Wed, 19 Feb 2020 16:17:50 +0800</pubDate>
+      
+      <guid>https://aebibtech-blog.firebaseapp.com/guides/win10-admin-account/</guid>
+      <description>&lt;p&gt;The Administrator account in Windows 10 is disabled by default for security reasons. Enable the Administrator account if you have any sane reason to do so.&lt;br&gt;
+The fastest way to do it is through the command line.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 Shutdown, Restart and Log Off Desktop Shortcuts</title>
+      <link>https://aebibtech-blog.firebaseapp.com/guides/win10-shutdown-shortcut/</link>
+      <pubDate>Wed, 19 Feb 2020 00:08:30 +0800</pubDate>
+      
+      <guid>https://aebibtech-blog.firebaseapp.com/guides/win10-shutdown-shortcut/</guid>
+      <description>&lt;p&gt;Normally, shutting down, restarting or logging off a PC while using Windows 10 takes 2-3 clicks. Make shut down, restart and log off visible on the desktop by creating shutdown, restart, and log off desktop shortcuts on Windows 10. One can pin those shortcuts to the taskbar for much more easier access. Just be careful not to click those while working.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remote Support</title>
+      <link>https://aebibtech-blog.firebaseapp.com/remote-support/</link>
+      <pubDate>Thu, 13 Feb 2020 09:54:25 +0800</pubDate>
+      
+      <guid>https://aebibtech-blog.firebaseapp.com/remote-support/</guid>
+      <description>&lt;p&gt;Having problems with your PC? I might be able to help.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>pfSense Setup for Online Gaming</title>
+      <link>https://aebibtech-blog.firebaseapp.com/guides/pfsense-gaming-setup/</link>
+      <pubDate>Tue, 11 Feb 2020 22:54:38 +0800</pubDate>
+      
+      <guid>https://aebibtech-blog.firebaseapp.com/guides/pfsense-gaming-setup/</guid>
+      <description>&lt;p&gt;Eliminate lags while gaming at home!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
