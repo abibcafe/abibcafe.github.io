@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Aebibtech</title>
-    <link>https://aebibtech-blog.firebaseapp.com/categories/</link>
+    <link>https://abibcafe.github.io/categories/</link>
     <description>Recent content in Categories on Aebibtech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 24 Feb 2020 14:01:59 +0800</lastBuildDate>
     
-	<atom:link href="https://aebibtech-blog.firebaseapp.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://abibcafe.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Computers</title>
-      <link>https://aebibtech-blog.firebaseapp.com/categories/computers/</link>
+      <link>https://abibcafe.github.io/categories/computers/</link>
       <pubDate>Mon, 24 Feb 2020 14:01:59 +0800</pubDate>
       
-      <guid>https://aebibtech-blog.firebaseapp.com/categories/computers/</guid>
+      <guid>https://abibcafe.github.io/categories/computers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>https://aebibtech-blog.firebaseapp.com/categories/windows/</link>
+      <link>https://abibcafe.github.io/categories/windows/</link>
       <pubDate>Wed, 19 Feb 2020 17:17:48 +0800</pubDate>
       
-      <guid>https://aebibtech-blog.firebaseapp.com/categories/windows/</guid>
+      <guid>https://abibcafe.github.io/categories/windows/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Networking</title>
-      <link>https://aebibtech-blog.firebaseapp.com/categories/networking/</link>
+      <link>https://abibcafe.github.io/categories/networking/</link>
       <pubDate>Tue, 11 Feb 2020 22:54:38 +0800</pubDate>
       
-      <guid>https://aebibtech-blog.firebaseapp.com/categories/networking/</guid>
+      <guid>https://abibcafe.github.io/categories/networking/</guid>
       <description></description>
     </item>
     
