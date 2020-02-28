@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>pfSense Setup for Online Gaming | Aebibtech</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Setup pfSense for your gaming needs.">
+		<meta property="og:title" content="pfSense Setup for Online Gaming" />
+<meta property="og:description" content="Setup pfSense for your gaming needs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aebibtech.github.io/guides/pfsense-gaming-setup/" />
+<meta property="article:published_time" content="2020-02-11T22:54:38+08:00" />
+<meta property="article:modified_time" content="2020-02-11T22:54:38+08:00" />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="pfSense Setup for Online Gaming"/>
+<meta name="twitter:description" content="Setup pfSense for your gaming needs."/>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+</head>
+<body>
+	<header class="header">
+	<a class="logo" href="/">Aebibtech</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+		<li class="main-nav__item"><a class="main-nav__link" href="/guides/">Guides</a></li>
+		<li class="main-nav__item"><a class="main-nav__link" href="/remote-support/">Remote Support</a></li>
+	</ul>
+</nav>
+	
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		
+		<div class="single block">
+			<article class="post">
+	<div class="post__meta meta mb">
+<time class="post__meta-published meta-published" datetime="2020-02-11T22:54:38">February 11, 2020</time>
+<span class="post__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories: <a class="meta-categories__link" href="/categories/networking" rel="category">Networking</a></span>
+</span>
+	</div>
+
+				<h1 class="post__title">pfSense Setup for Online Gaming</h1>
+<details class="post__toc toc" open>
+	<summary class="toc__title">Table of Contents</summary>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#hardwareequipment">Hardware/Equipment</a></li>
+    <li><a href="#software">Software</a></li>
+    <li><a href="#turn-off-wi-fi-routers-dhcp-server">Turn off Wi-Fi router&rsquo;s DHCP Server</a></li>
+    <li><a href="#prepare-the-pfsense-installer">Prepare the pfSense Installer</a></li>
+    <li><a href="#install-pfsense">Install pfSense</a></li>
+    <li><a href="#pfsense-initial-configuration">pfSense Initial Configuration</a></li>
+    <li><a href="#setting-up-aliases">Setting up Aliases</a></li>
+    <li><a href="#setting-up-limiters">Setting up Limiters</a></li>
+    <li><a href="#setting-up-firewall-rules">Setting up Firewall Rules</a></li>
+  </ul>
+</nav>
+</details>
+
+				<div class="post__content"><p>Eliminate lags while gaming at home!</p>
+<p>Are you tired of high pings while gaming? Having to wait for them to sleep just to play your favorite online game? Then this guide is for you!</p>
+<!-- raw HTML omitted -->
+<p>pfSense is an open source firewall/router computer software distribution based on FreeBSD. It is installed on a physical computer or a virtual machine to make a dedicated firewall/router for a network. It can be configured and upgraded through a web-based interface, and requires no knowledge of the underlying FreeBSD system to manage.</p>
+<!-- raw HTML omitted -->
+<p>We will be using this powerful platform to end your gaming misery!</p>
+<hr>
+<h1 id="what-you-will-need">What you will need:</h1>
+<h2 id="hardwareequipment">Hardware/Equipment</h2>
+<ul>
+<li>A PC or Laptop (usually at home you have Windows OS) for preparing the pfSense installer</li>
+<li>PC with 2 LAN ports - This will serve as the pfSense router.</li>
+<li>WiFi Router - pfSense router and other devices will be connected here.</li>
+<li>At least 3 network cables.</li>
+<li>2GB (or more) USB Flash Drive/Stick (whatever you call it)</li>
+</ul>
+<h2 id="software">Software</h2>
+<ul>
+<li>pfSense Installer (download <a href="https://sgpfiles.pfsense.org/mirror/downloads/pfSense-CE-memstick-2.4.4-RELEASE-p3-amd64.img.gz">here</a>)</li>
+<li>Win32 Disk Imager (download <a href="https://sourceforge.net/projects/win32diskimager/files/latest/download">here</a>)</li>
+<li>7-zip (download <a href="https://www.7-zip.org/a/7z1900-x64.exe">here</a>)</li>
+</ul>
+<hr>
+<h2 id="turn-off-wi-fi-routers-dhcp-server">Turn off Wi-Fi router&rsquo;s DHCP Server</h2>
+<p>Refer to your Wi-Fi router&rsquo;s manual for information regarding this. This will ensure that the devices get its configuration from the pfSense router.</p>
+<hr>
+<h2 id="prepare-the-pfsense-installer">Prepare the pfSense Installer</h2>
+<ol>
+<li>Download and install Win32 Disk Imager (link above).</li>
+<li>Download the pfSense Installer (link above). Select the USB Memstick Installer.</li>
+<li>Install 7-zip. <em><strong>Skip this step if you already have it (or another archive software).</strong></em></li>
+<li>Extract the pfSense Installer using 7-zip or another archive program.</li>
+<li>Open Win32 Disk Imager.<br>
+<img src="/img/pfsense-gaming-setup/main-w32di.jpeg" alt="win32diskimager"></li>
+<li>Select the <strong>extracted</strong> pfSense Installer. It is an .img file.<br>
+<img src="/img/pfsense-gaming-setup/select-pfsense-installer.PNG" alt="pfsense.img"></li>
+<li>A make sure that you have selected the correct device(your USB drive). Click <strong>Write</strong>.<br>
+<img src="/img/pfsense-gaming-setup/selected-pfsense-installer.PNG" alt="selected-pfsense-installer"></li>
+<li>Click <strong>Yes</strong>.<br>
+<img src="/img/pfsense-gaming-setup/warning-w32di.PNG" alt="warning-w32di"></li>
+<li>Wait for the process to finish. Close Win32 Disk Imager.<br>
+<img src="/img/pfsense-gaming-setup/write-successful.PNG" alt="write-successful"></li>
+</ol>
+<hr>
+<h2 id="install-pfsense">Install pfSense</h2>
+<!-- raw HTML omitted -->
+<p>Now we will be installing pfSense.<br>
+Connect the keyboard, monitor and the pfSense installer USB flash drive to the PC that you chose to use. Turn on (or restart) the PC.</p>
+<ol>
+<li>Boot the PC from the USB flash drive. Refer to your motherboard&rsquo;s manual to find out how.<br>
+<img src="/img/pfsense-gaming-setup/boot-menu.jpg" alt="boot-menu"></li>
+<li>Wait for it to reach this screen. Accept the notice by pressing <strong>Enter</strong>.<br>
+<img src="/img/pfsense-gaming-setup/pfsense-install-1.png" alt="pfsense-install-1"></li>
+<li>Select <strong>Install</strong> and press Enter.<br>
+<img src="/img/pfsense-gaming-setup/pfsense-install-2.png" alt="pfsense-install-2"></li>
+<li>Select your desired keymap. I will just select <strong>Continue with default keymap</strong> here since I use the US keymap and press Enter.<br>
+<img src="/img/pfsense-gaming-setup/pfsense-install-3.png" alt="pfsense-install-3"></li>
+<li>Select <strong>Auto (UFS)</strong> and press Enter.<br>
+<img src="/img/pfsense-gaming-setup/pfsense-install-4.png" alt="pfsense-install-4"></li>
+<li>Wait for the install to finish. When the install finishes, select <strong>No</strong> and press Enter.<br>
+<img src="/img/pfsense-gaming-setup/pfsense-install-5.png" alt="pfsense-install-5"><br>
+<img src="/img/pfsense-gaming-setup/pfsense-install-6.png" alt="pfsense-install-6"></li>
+<li>Select <strong>Shell</strong> and press Enter.<br>
+<img src="/img/pfsense-gaming-setup/pfsense-install-7.png" alt="pfsense-install-7"></li>
+<li>Type <strong>poweroff</strong> and press Enter. The PC will shut down.<br>
+<img src="/img/pfsense-gaming-setup/pfsense-install-8.png" alt="pfsense-install-8"></li>
+<li>Unplug the pfSense installer USB flash drive. This will make sure that it boots from the disk where pfSense is installed when the PC is turned on.</li>
+<li>Connect the network cable from your Internet modem to one of the network ports in the pfSense router.</li>
+<li>Connect the pfSense router to the WiFi router using a network cable.</li>
+<li>Turn on the PC. Wait for it to completely load pfSense.</li>
+</ol>
+<hr>
+<h2 id="pfsense-initial-configuration">pfSense Initial Configuration</h2>
+<ol>
+<li>Type <strong>2</strong> and press Enter. Type the number of your LAN interface and press Enter. In this case, it is <strong>2</strong>.<br>
+<img src="/img/pfsense-gaming-setup/pfsense-initial-1.png" alt="pfsense-initial-1"></li>
+<li>Press Enter after typing each required information.
+<ol>
+<li>Enter the desired LAN IP Address. Remember what you put in here. It will be used later.</li>
+<li>Enter the subnet bit count. This sets how many IP addresses are available for use. Refer to <strong><a href="https://www.comparitech.com/net-admin/subnetting-guide/">this</a></strong> guide for more information.</li>
+<li>Leave the IPv4 upstream gateway blank.</li>
+<li>Leave the LAN IPv6 address blank unless you use one.</li>
+<li>Enable the DHCP server by typing <strong>y</strong>.</li>
+<li>Enter the start address of the IPv4 client address range in the format xxx.xxx.xxx.xxx.</li>
+<li>Enter the end address of the IPv4 client address range in the format xxx.xxx.xxx.xxx.</li>
+<li>Type <strong>y</strong> in the &ldquo;Do you want to revert to HTTP as the webConfigurator protocol?&rdquo; This will prevent errors in the web browser later.
+<img src="/img/pfsense-gaming-setup/pfsense-initial-3.png" alt="pfsense-initial-3"></li>
+</ol>
+</li>
+<li>Connect a PC or laptop to the WiFi router using a network cable.</li>
+<li>Try to browse a website (e.g. Facebook). If the website loads, then we can proceed to the next step.</li>
+<li>Disconnect the monitor and the keyboard from the pfSense router.</li>
+<li>Open your web browser (Google Chrome, Firefox, etc.). Type the LAN IP address that you put earlier. In this case, it is <strong>192.168.78.254</strong>.</li>
+<li>Login with the following credentials: username: <em>admin</em> password:  <em>pfsense</em>.</li>
+<li>Click <strong>Accept</strong> in the blue dialog. You can read it if you want to do so.</li>
+<li>Close the <strong>Netgate Services and Support</strong> by clicking on the <strong>x</strong>. You can purchase support from them if you need to.</li>
+<li>Change your admin account password via the User Manager. Enter your password in the two password fields. Click <strong>Save</strong> at the bottom of the page.</li>
+<li>Go to <strong>System &gt; Advanced &gt; Firewall/NAT</strong>. In the <strong>Firewall Optimization</strong>, select <strong>Conservative</strong>.</li>
+<li>(Optional) If you forward ports a lot (for PS4 as an example), then set the <strong>NAT Reflection for Port Forwards</strong> to <strong>Pure NAT</strong>.</li>
+<li>Click <strong>Save</strong> at the bottom of the page.</li>
+<li>(Optional) If your WAN IP Address resides on a private network (e.g. 192.168.0.1). Do the following:
+<ul>
+<li>Go to <strong>Interfaces &gt; WAN</strong>. At the bottom of the page, uncheck the <strong>Block private addresses and loopback addresses</strong> and the <strong>Block bogon networks</strong>.</li>
+<li>Click <strong>Save</strong>.
+<img src="/img/pfsense-gaming-setup/pfsense-initial-8.png" alt="pfsense-initial-8"></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="setting-up-aliases">Setting up Aliases</h2>
+<ol>
+<li>Right-click <strong><a href="/aliases.xml">this</a></strong> link and click <strong>Save link as</strong> and then <strong>Save</strong> to a folder that you can remember.</li>
+<li>Go to <strong>Diagnostics &gt; Backup &amp; Restore</strong>.</li>
+<li>In the <strong>Restore Backup</strong> section, select the following:
+<ul>
+<li>Restore Area: Aliases</li>
+<li>Configuration file: <strong><a href="/aliases.xml">aliases.xml</a></strong> - the one that you saved in Step 1 of <strong>Setting up Aliases</strong>.</li>
+</ul>
+</li>
+<li>Click <strong>Restore Configuration</strong>. 
+<img src="/img/pfsense-gaming-setup/pfsense-limiters-1.png" alt="pfsense-limiters-1"></li>
+</ol>
+<hr>
+<h2 id="setting-up-limiters">Setting up Limiters</h2>
+<ol>
+<li>Open a new tab and go to <a href="https://speedtest.net">https://speedtest.net</a> (or any speed testing site) to check your upload and download speeds.</li>
+<li>Go to <strong>Firewall &gt; Traffic Shaper</strong>.</li>
+<li>Go to <strong>Limiters</strong>.</li>
+<li>Click <strong>New Limiter</strong>.</li>
+<li>Set the following:
+<ul>
+<li>Check <strong>Enable limiter and its children</strong>.</li>
+<li>Name: <strong>Download</strong></li>
+<li>Bandwidth: <strong>75% of Download Speed</strong></li>
+</ul>
+</li>
+<li>Click <strong>Save</strong> at the bottom of the page.</li>
+<li>Click <strong>Apply Changes</strong> at the top of the page.</li>
+<li>Repeat Steps 5,6,7 for <strong>Upload</strong>.
+<img src="/img/pfsense-gaming-setup/pfsense-limiters-5.png" alt="pfsense-limiters-5"></li>
+</ol>
+<hr>
+<h2 id="setting-up-firewall-rules">Setting up Firewall Rules</h2>
+<ol>
+<li>Go to <strong>Firewall &gt; Rules</strong>. Click <strong>LAN</strong>.</li>
+<li>Click the <strong>Add</strong> button with the up arrow.</li>
+<li>Set the following:
+<ul>
+<li>Protocol: <strong>TCP/UDP</strong></li>
+<li>Destination Port Range:
+<ul>
+<li>From: <strong>(other)</strong> In the <strong>Custom</strong> Field, type <strong>BrowsePorts</strong>.</li>
+<li>To: <strong>(other)</strong> In the <strong>Custom</strong> Field, type <strong>BrowsePorts</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Click <strong>Display Advanced</strong>.
+<img src="/img/pfsense-gaming-setup/pfsense-limiters-fr-5.png" alt="pfsense-limiters-fr-5"></li>
+<li>Set the following under <strong>Advanced Options</strong>:
+<ul>
+<li>In/Out pipe:
+<ul>
+<li>First box: <strong>Upload</strong></li>
+<li>Second box: <strong>Download</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong> at the bottom of the page.
+<img src="/img/pfsense-gaming-setup/pfsense-limiters-fr-6.png" alt="pfsense-limiters-fr-6"></li>
+<li>Click <strong>Apply Changes</strong> at the top of the page.</li>
+<li>Go to <strong>Status &gt; Filter Reload</strong>. Click <strong>Reload Filter</strong>.</li>
+</ol>
+<hr>
+<h1 id="conclusion">Conclusion</h1>
+<p>Try to play an online game while watching YouTube or Netflix. If it does not lag (the ping is low), then <strong>Congratulations!</strong><br>
+Say goodbye to high pings and lags while gaming online!</p></div>
+				
+				<footer class="post__footer">
+					
+
+
+<div class="post__tags">
+	<a class="post__tag btn" href="/tags/pfsense">pfsense</a><a class="post__tag btn" href="/tags/gaming">gaming</a>
+</div>
+
+
+					
+<div class="post__share share">
+	<a class="share__link btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2faebibtech.github.io%2fguides%2fpfsense-gaming-setup%2f" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Facebook', 'width=800,height=600,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Facebook" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M330 512V322h64l9-74h-73v-47c0-22 6-36 37-36h39V99c-7-1-30-3-57-3-57 0-95 34-95 98v54h-64v74h64v190z"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2faebibtech.github.io%2fguides%2fpfsense-gaming-setup%2f&amp;text=pfSense%20Setup%20for%20Online%20Gaming" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2faebibtech.github.io%2fguides%2fpfsense-gaming-setup%2f&amp;title=pfSense%20Setup%20for%20Online%20Gaming" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+	<a class="share__link btn" title="Save to Pinterest" href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2faebibtech.github.io%2fguides%2fpfsense-gaming-setup%2f&description=pfSense%20Setup%20for%20Online%20Gaming" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Save to Pocket', 'width=800,height=720,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Pinterest" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="m265 65c-104 0-157 75-157 138 0 37 14 71 45 83 5 2 10 0 12-5l3-18c2-6 1-7-2-12-9-11-15-24-15-43 0-56 41-106 108-106 60 0 92 37 92 85 0 64-28 116-70 116-23 0-40-18-34-42 6-27 19-57 19-77 0-18-9-34-30-34-24 0-42 25-42 58 0 20 7 34 7 34l-29 120a249 249 0 0 0 2 86l3-1c2-3 31-37 40-72l16-61c7 15 29 28 53 28 71 0 119-64 119-151 0-66-56-126-140-126z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+		
+	</main>
+	
+	
+
+
+
+	
+<section class="comments block">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "aebibtech" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+	</div>
+	<footer class="footer">
+	<div class="footer__copyright">© 2020 Aebibtech. <a href="/about/">About Us</a> <a href="/contact/">Contact Us</a> <a href="/tos/">Terms of Service</a> <a href="/privacy-policy/">Privacy Policy</a></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>

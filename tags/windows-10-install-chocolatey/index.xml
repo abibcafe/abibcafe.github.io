@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows 10 install chocolatey on Aebibtech</title>
+    <link>https://aebibtech.github.io/tags/windows-10-install-chocolatey/</link>
+    <description>Recent content in windows 10 install chocolatey on Aebibtech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Feb 2020 17:17:48 +0800</lastBuildDate>
+    
+	<atom:link href="https://aebibtech.github.io/tags/windows-10-install-chocolatey/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install the Chocolatey Package Manager in Windows 10</title>
+      <link>https://aebibtech.github.io/guides/win10-install-chocolatey/</link>
+      <pubDate>Wed, 19 Feb 2020 17:17:48 +0800</pubDate>
+      
+      <guid>https://aebibtech.github.io/guides/win10-install-chocolatey/</guid>
+      <description>&lt;p&gt;A package manager or package-management system is a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs for a computer&amp;rsquo;s operating system in a consistent manner.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

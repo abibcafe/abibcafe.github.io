@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>enable administrator account windows 10 on Aebibtech</title>
+    <link>https://aebibtech.github.io/tags/enable-administrator-account-windows-10/</link>
+    <description>Recent content in enable administrator account windows 10 on Aebibtech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Feb 2020 16:17:50 +0800</lastBuildDate>
+    
+	<atom:link href="https://aebibtech.github.io/tags/enable-administrator-account-windows-10/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Enable the Administrator account in Windows 10</title>
+      <link>https://aebibtech.github.io/guides/win10-admin-account/</link>
+      <pubDate>Wed, 19 Feb 2020 16:17:50 +0800</pubDate>
+      
+      <guid>https://aebibtech.github.io/guides/win10-admin-account/</guid>
+      <description>&lt;p&gt;The Administrator account in Windows 10 is disabled by default for security reasons. Enable the Administrator account if you have any sane reason to do so.&lt;br&gt;
+The fastest way to do it is through the command line.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
