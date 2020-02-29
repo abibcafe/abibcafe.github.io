@@ -85,12 +85,21 @@ The fastest way to do it is through the command line.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>pfSense Setup for Online Gaming</title>
-      <link>https://aebibtech.github.io/guides/pfsense-gaming-setup/</link>
+      <title>pfSense Limiters for Online Gaming</title>
+      <link>https://aebibtech.github.io/guides/pfsense-limiters/</link>
+      <pubDate>Wed, 12 Feb 2020 01:55:16 +0800</pubDate>
+      
+      <guid>https://aebibtech.github.io/guides/pfsense-limiters/</guid>
+      <description>&lt;p&gt;Eliminate lags while gaming at home!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>pfSense Installation Guide</title>
+      <link>https://aebibtech.github.io/guides/pfsense-install/</link>
       <pubDate>Tue, 11 Feb 2020 22:54:38 +0800</pubDate>
       
-      <guid>https://aebibtech.github.io/guides/pfsense-gaming-setup/</guid>
-      <description>&lt;p&gt;Eliminate lags while gaming at home!&lt;/p&gt;</description>
+      <guid>https://aebibtech.github.io/guides/pfsense-install/</guid>
+      <description>&lt;p&gt;pfSense is an open source firewall/router computer software distribution based on FreeBSD.&lt;/p&gt;</description>
     </item>
     
   </channel>
