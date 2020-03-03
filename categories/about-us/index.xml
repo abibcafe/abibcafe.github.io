@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About Us on Aebibtech</title>
-    <link>https://aebibtech.github.io/categories/about-us/</link>
+    <link>https://aebibtech.com/categories/about-us/</link>
     <description>Recent content in About Us on Aebibtech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Feb 2020 14:53:14 +0800</lastBuildDate>
     
-	<atom:link href="https://aebibtech.github.io/categories/about-us/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aebibtech.com/categories/about-us/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://aebibtech.github.io/about/</link>
+      <link>https://aebibtech.com/about/</link>
       <pubDate>Thu, 27 Feb 2020 14:53:14 +0800</pubDate>
       
-      <guid>https://aebibtech.github.io/about/</guid>
+      <guid>https://aebibtech.com/about/</guid>
       <description>&lt;p&gt;Aebibtech is a site that contains guides regarding computers and networks that can be useful for individuals and business.&lt;/p&gt;</description>
     </item>
     

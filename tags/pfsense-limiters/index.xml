@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pfsense limiters on Aebibtech</title>
-    <link>https://aebibtech.github.io/tags/pfsense-limiters/</link>
+    <link>https://aebibtech.com/tags/pfsense-limiters/</link>
     <description>Recent content in pfsense limiters on Aebibtech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Feb 2020 01:55:16 +0800</lastBuildDate>
     
-	<atom:link href="https://aebibtech.github.io/tags/pfsense-limiters/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aebibtech.com/tags/pfsense-limiters/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pfSense Limiters for Online Gaming</title>
-      <link>https://aebibtech.github.io/guides/pfsense-limiters/</link>
+      <link>https://aebibtech.com/guides/pfsense-limiters/</link>
       <pubDate>Wed, 12 Feb 2020 01:55:16 +0800</pubDate>
       
-      <guid>https://aebibtech.github.io/guides/pfsense-limiters/</guid>
+      <guid>https://aebibtech.com/guides/pfsense-limiters/</guid>
       <description>&lt;p&gt;Eliminate lags while gaming at home!&lt;/p&gt;</description>
     </item>
     

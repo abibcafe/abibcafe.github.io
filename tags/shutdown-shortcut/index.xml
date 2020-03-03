@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shutdown shortcut on Aebibtech</title>
-    <link>https://aebibtech.github.io/tags/shutdown-shortcut/</link>
+    <link>https://aebibtech.com/tags/shutdown-shortcut/</link>
     <description>Recent content in shutdown shortcut on Aebibtech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Feb 2020 00:08:30 +0800</lastBuildDate>
     
-	<atom:link href="https://aebibtech.github.io/tags/shutdown-shortcut/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aebibtech.com/tags/shutdown-shortcut/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Windows 10 Shutdown, Restart and Log Off Desktop Shortcuts</title>
-      <link>https://aebibtech.github.io/guides/win10-shutdown-shortcut/</link>
+      <link>https://aebibtech.com/guides/win10-shutdown-shortcut/</link>
       <pubDate>Wed, 19 Feb 2020 00:08:30 +0800</pubDate>
       
-      <guid>https://aebibtech.github.io/guides/win10-shutdown-shortcut/</guid>
+      <guid>https://aebibtech.com/guides/win10-shutdown-shortcut/</guid>
       <description>&lt;p&gt;Normally, shutting down, restarting or logging off a PC while using Windows 10 takes 2-3 clicks. Make shut down, restart and log off visible on the desktop by creating shutdown, restart, and log off desktop shortcuts on Windows 10. One can pin those shortcuts to the taskbar for much more easier access. Just be careful not to click those while working.&lt;/p&gt;</description>
     </item>
     
