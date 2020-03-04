@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows 10 startup on Aebibtech</title>
+    <link>https://aebibtech.com/tags/windows-10-startup/</link>
+    <description>Recent content in windows 10 startup on Aebibtech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Mar 2020 01:51:22 +0800</lastBuildDate>
+    
+	<atom:link href="https://aebibtech.com/tags/windows-10-startup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Manage Start Up Applications on Windows 10</title>
+      <link>https://aebibtech.com/guides/win10-startup-apps/</link>
+      <pubDate>Thu, 05 Mar 2020 01:51:22 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/guides/win10-startup-apps/</guid>
+      <description>&lt;p&gt;Manage the applications that start up when Windows 10 loads.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
