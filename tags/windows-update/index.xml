@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows update on Aebibtech</title>
+    <link>https://aebibtech.com/tags/windows-update/</link>
+    <description>Recent content in windows update on Aebibtech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Mar 2020 16:43:37 +0800</lastBuildDate>
+    
+	<atom:link href="https://aebibtech.com/tags/windows-update/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Disable Automatic Updates on Windows 10</title>
+      <link>https://aebibtech.com/guides/win10-disable-updates/</link>
+      <pubDate>Thu, 05 Mar 2020 16:43:37 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/guides/win10-disable-updates/</guid>
+      <description>&lt;p&gt;An effective way to disable automatic updates on Windows 10.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
