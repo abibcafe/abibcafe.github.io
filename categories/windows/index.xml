@@ -6,10 +6,19 @@
     <description>Recent content in Windows on Aebibtech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Mar 2020 16:43:37 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2020 14:06:43 +0000</lastBuildDate>
     
 	<atom:link href="https://aebibtech.com/categories/windows/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Disable the Delay in Startup Programs on Windows 10</title>
+      <link>https://aebibtech.com/guides/startup-delay-win10/</link>
+      <pubDate>Mon, 13 Apr 2020 14:06:43 +0000</pubDate>
+      
+      <guid>https://aebibtech.com/guides/startup-delay-win10/</guid>
+      <description>&lt;p&gt;Disable the delay before loading the startup programs in Windows 10.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Disable Automatic Updates on Windows 10</title>
