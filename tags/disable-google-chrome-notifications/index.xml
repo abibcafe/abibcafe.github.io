@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>disable google chrome notifications on Aebibtech</title>
+    <link>https://aebibtech.com/tags/disable-google-chrome-notifications/</link>
+    <description>Recent content in disable google chrome notifications on Aebibtech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Apr 2020 05:36:17 +0800</lastBuildDate>
+    
+	<atom:link href="https://aebibtech.com/tags/disable-google-chrome-notifications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Disable Notifications Prompt in Google Chrome</title>
+      <link>https://aebibtech.com/guides/chrome-disable-notifications/</link>
+      <pubDate>Sun, 26 Apr 2020 05:36:17 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/guides/chrome-disable-notifications/</guid>
+      <description>&lt;p&gt;Disable notifications prompt in Google Chrome.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
