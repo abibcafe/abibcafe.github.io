@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Aebibtech</title>
+    <link>https://aebibtech.com/categories/</link>
+    <description>Recent content in Categories on Aebibtech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Apr 2020 05:36:17 +0800</lastBuildDate>
+    
+	<atom:link href="https://aebibtech.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chrome</title>
+      <link>https://aebibtech.com/categories/chrome/</link>
+      <pubDate>Sun, 26 Apr 2020 05:36:17 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/categories/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://aebibtech.com/categories/windows/</link>
+      <pubDate>Sun, 26 Apr 2020 05:36:17 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/categories/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computers</title>
+      <link>https://aebibtech.com/categories/computers/</link>
+      <pubDate>Sun, 01 Mar 2020 00:55:04 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/categories/computers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gaming</title>
+      <link>https://aebibtech.com/categories/gaming/</link>
+      <pubDate>Sun, 01 Mar 2020 00:55:04 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/categories/gaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Networking</title>
+      <link>https://aebibtech.com/categories/networking/</link>
+      <pubDate>Sun, 01 Mar 2020 00:55:04 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/categories/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terms of Service</title>
+      <link>https://aebibtech.com/categories/terms-of-service/</link>
+      <pubDate>Fri, 28 Feb 2020 15:20:19 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/categories/terms-of-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://aebibtech.com/categories/privacy-policy/</link>
+      <pubDate>Thu, 27 Feb 2020 14:55:27 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/categories/privacy-policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact Us</title>
+      <link>https://aebibtech.com/categories/contact-us/</link>
+      <pubDate>Thu, 27 Feb 2020 14:55:20 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/categories/contact-us/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About Us</title>
+      <link>https://aebibtech.com/categories/about-us/</link>
+      <pubDate>Thu, 27 Feb 2020 14:53:14 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/categories/about-us/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pfSense</title>
+      <link>https://aebibtech.com/categories/pfsense/</link>
+      <pubDate>Wed, 12 Feb 2020 01:55:16 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/categories/pfsense/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
