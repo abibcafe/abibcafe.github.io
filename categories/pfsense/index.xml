@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pfSense on Aebibtech</title>
+    <link>https://aebibtech.com/categories/pfsense/</link>
+    <description>Recent content in pfSense on Aebibtech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Feb 2020 01:55:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://aebibtech.com/categories/pfsense/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>pfSense Limiters for Online Gaming</title>
+      <link>https://aebibtech.com/guides/pfsense-limiters/</link>
+      <pubDate>Wed, 12 Feb 2020 01:55:16 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/guides/pfsense-limiters/</guid>
+      <description>&lt;p&gt;Eliminate lags while gaming at home!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>pfSense Installation Guide</title>
+      <link>https://aebibtech.com/guides/pfsense-install/</link>
+      <pubDate>Tue, 11 Feb 2020 22:54:38 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/guides/pfsense-install/</guid>
+      <description>&lt;p&gt;pfSense is an open source firewall/router computer software distribution based on FreeBSD.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

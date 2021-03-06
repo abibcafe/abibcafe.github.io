@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shutdown shortcut on Aebibtech</title>
+    <link>https://aebibtech.com/tags/shutdown-shortcut/</link>
+    <description>Recent content in shutdown shortcut on Aebibtech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Feb 2020 00:08:30 +0800</lastBuildDate>
+    
+	<atom:link href="https://aebibtech.com/tags/shutdown-shortcut/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shutdown, Restart and Log Off Shortcuts | Windows</title>
+      <link>https://aebibtech.com/guides/win10-shutdown-shortcut/</link>
+      <pubDate>Wed, 19 Feb 2020 00:08:30 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/guides/win10-shutdown-shortcut/</guid>
+      <description>&lt;p&gt;Make shut down, restart and log off visible on the desktop by creating shutdown, restart, and log off desktop shortcuts on Windows 10.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

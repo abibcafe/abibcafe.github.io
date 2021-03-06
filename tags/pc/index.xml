@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PC on Aebibtech</title>
+    <link>https://aebibtech.com/tags/pc/</link>
+    <description>Recent content in PC on Aebibtech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Feb 2020 20:01:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://aebibtech.com/tags/pc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Choose a PC</title>
+      <link>https://aebibtech.com/guides/choosing-computers/</link>
+      <pubDate>Wed, 19 Feb 2020 20:01:56 +0800</pubDate>
+      
+      <guid>https://aebibtech.com/guides/choosing-computers/</guid>
+      <description>&lt;p&gt;Usually people Wondering which PC to choose? Well, it depends on how it will be used.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
