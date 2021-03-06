@@ -1,0 +1,109 @@
+body {
+    background-color: #bbb;
+}
+
+.block {
+    color: #000;
+	background-color: #eee;
+	border: 1.5px solid #999;
+    border-radius: 5px;
+}
+
+a {
+    color: #111;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #111;
+}
+
+p {
+    color: #000;
+}
+
+ul{
+    color: #000;
+}
+
+ol{
+    color: #000;
+    font-weight: 500;
+    line-height: 2;
+}
+
+ 
+h1,h2,h3,h4,h5,h6 {
+    color: #000;
+}
+
+.header {
+    background-color: #eee;
+}
+
+.main-nav__btn {
+    background-color: #eee;
+    fill: #000;
+}
+
+.main-nav__list.main-nav__list--active {
+    background-color: #eee;
+}
+
+.share__icon {
+	fill: #eee;
+	stroke: #eee;
+}
+
+code {
+	padding: 1px 3px;
+	color: #000;
+	background-color: transparent;
+}
+
+.toc {
+    font-weight: 500;
+    color: #000;
+    background-color: #ddd;
+    border: 2px solid #999;
+    border-radius: 5px;
+}
+
+.btn {
+    color: #eee;
+	background-color: #999;
+	border-radius: 3px;
+}
+
+.btn:hover {
+    color: #eee;
+	background-color: #999;
+}
+
+.main-nav__item:hover {
+	background-color: #ccc;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+.logo:hover {
+	color: #567;
+}
+
+img {
+    border: 0.5px solid black;
+}
+
+img[alt="aebibtech-logo"] {
+    display: none;
+}
+
+.pagination__item--active {
+    border: 3px solid;
+}
+
+.tagline {
+    font-size: 15px;
+}
